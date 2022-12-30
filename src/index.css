@@ -1,0 +1,35 @@
+:root{
+    --clr-light-blue: #3892c2;
+    --clr-bg-color: #222222;
+    --clr-bg-card: #272724;
+    --clr-text: #f5f5f5
+}
+
+body{
+    background-color: var(--clr-bg-color);
+    color: var(--clr-text);
+}
+
+.my-title::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 5px;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-color: var(--clr-light-blue);
+}
+
+/* CARD */
+.my-card{
+    display: none;
+}
+
+.my-card.active{
+    display: block;
+}
+
+.card{
+    background-color: var(--clr-bg-card);
+    color: #f5f5f5;
+}
